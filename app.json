@@ -1,0 +1,46 @@
+{
+    "name": "Nobita 𝗛𝗔𝗖𝗞 𝗕𝗢𝗧",
+    "description": "𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗠𝗔𝗞𝗘 𝗕𝗬 𝗧𝗘𝗔𝗠 Nobita",
+    "logo": "",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "banall"
+    ],
+    "website": "https://t.me/Riyal_mee",
+    "repository": "https://github.com/Balloonflame7",
+    "success_url": "https://t.me/Riyal_mee",
+    "env": {
+        "API_ID": {
+            "description": "23812672",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "297d47a5510f124e7f58387c0682e7ef",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "8359190940:AAG8GJZzpDMhls3mjkzaYH3XLpWrUP3pn_k",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "Basic"
+        }
+    },
+    "stack": "container"
+    }
